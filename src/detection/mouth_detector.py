@@ -1,10 +1,13 @@
 
 import numpy as np
+from src.detection.base_detector import BaseDetector
 
 
-class MouthDetector:
+class MouthDetector(BaseDetector):
 
     def __init__(self):
+
+        super().__init__()
 
         # Mouth landmark indices
         self.mouth_indices = [

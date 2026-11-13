@@ -1,10 +1,13 @@
 
 import numpy as np
+from src.detection.base_detector import BaseDetector
 
 
-class EyeDetector:
+class EyeDetector(BaseDetector):
 
     def __init__(self):
+
+        super().__init__()
 
         self.right_eye_indices = [
             33, 160, 158, 133, 153, 144
